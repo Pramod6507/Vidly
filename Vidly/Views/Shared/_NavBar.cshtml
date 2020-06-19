@@ -1,0 +1,18 @@
+﻿<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @Html.ActionLink("Vidly", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">@Html.ActionLink("Customers", actionName: "Index", controllerName: "Customers", routeValues: null, htmlAttributes: new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("Movies", actionName: "Index", controllerName: "Movies", routeValues: null, htmlAttributes: new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("About", actionName: "About", controllerName: "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })</li>
+                <li class="nav-item">@Html.ActionLink("Contact", actionName: "Contact", controllerName: "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+</div>
