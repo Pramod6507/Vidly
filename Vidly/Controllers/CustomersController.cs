@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.Ajax.Utilities;
 using Vidly.Models;
 using Vidly.ViewModels;
 
@@ -41,6 +42,11 @@ namespace Vidly.Controllers
         }
 
         public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        public ActionResult Add()
         {
             return View();
         }
